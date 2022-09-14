@@ -1,0 +1,9 @@
+body {
+    font-size: 16px;
+
+    background-color: palevioletred;
+}
+// this is perfectly valid SASS comment
+@import "./modules/_main.scss";
+@import "./modules/_header.scss";
+@import "./modules/_footer.scss";
