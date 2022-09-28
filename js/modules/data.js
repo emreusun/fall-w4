@@ -27,6 +27,13 @@ nicknmae: "Carrel", // string data type
 avatar: "justin.jpg" // 
 
 },
+Jarrod: {
+    name: "Jarrod", // string data type
+role: "Prof", // string data type
+nicknmae: "Zoolender", // string data type
+avatar: "jarrod.jpg" // 
+
+},
 
 }
 

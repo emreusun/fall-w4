@@ -21,13 +21,16 @@ import { profs } from "./modules/data.js";
         // ['Trevor', 'John', 'Joe', 'Justin']
 
         theProfs.forEach(prof => {
-        debugger;
+        
         // make a copy of the contents of the template tag
         let panel = theTemplate.cloneNode(true),
             containers = panel.firstElementChild.children; // the sections tag's contents
         // put the prof data were it needs to go (just text for now)
-        containers[0].textContent = profs[prof].name;
-        containers[1].textContent = profs[prof].role;
+        containers[0].querySelector('img').src = `images/${profs[prof].avatar}`;
+       
+
+        containers[1].textContent = profs[prof].name;
+        containers[2].textContent = profs[prof].role;
         
         //paste the prof markup into the team section on the page
         theTeam.appendChild(panel);

@@ -1,10 +1,14 @@
 @import "./modules/_reset.scss";
 @import "./modules/_vars.scss";
 
-
 // this is perfectly valid SASS comment
 
-@import "./modules/_defaults.scss";
+@import "./modules/_defaults.scss"; // mobile styles
+
+// responsibe styles next
+@import "./modules/_queries.scss";
+
+// everything else
 @import "./modules/_main.scss";
 @import "./modules/_header.scss";
 @import "./modules/_footer.scss";
