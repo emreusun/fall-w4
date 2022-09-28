@@ -8,35 +8,40 @@
     <title>Learning SASS</title>
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li>one</li>
-                <li>two</li>
-                <li>three</li>
-                <li>four</li>
-            </ul>
-            </ul>
-        </nav>
-    </header>
+   
     <main class="main">
-        <h1>my super awesome app</h1>
-        <article>
-            this is the article
-            <aside>
-                some text here
-            </aside>
-        </article>
+        <section class="team-section">
+        <!-- dynamic content gets injected here-->
+        </section>
+        <section class="chuck-norris">
+            <h2>enjoy this hilarious chuck norris joke</h2>
+            <h3 class="joke-text"></h3>
+            <button id="get-joke">can I Haz Joke</button>
+        </section>
     </main>
 
-<footer>
-    <nav>
-        <ul>
-            <li>one </li>
-            <li>two</li>
-            <li>three</li>
-        </ul>
-    </nav>
-</footer>
+    <!-- template's dont get rendered, but their content will be-->
+    <template id="user-template">
+        <section>
+            <div> <!-- child 0-->
+                <img src="" alt="prof image">
+            </div>
+            <h1 class="user-name">my super awesome app</h1> <!-- child 1-->
+            <article class="user-desc">
+                this is the article
+                <aside>
+                    some text here
+                </aside>
+            </article>
+        </section>
+    </template>
+        
+
+
+<!-- script links go down here -->
+<!-- use a defer attribute to delay parsing (should be last thing read)-->
+<!-- add a module attribute to let us load partials in the main file -->
+<!-- <script src="js/modules/data.js"></script> -->
+<script src="js/main.js" defer type="module"></script>
 </body>
 </html>

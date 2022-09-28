@@ -1,7 +1,11 @@
 main { background-color: yellow;
-    h1 {color: blue; }
+    // these height width are they extra for now
+    height: 120px;
+    width: 200px;
+    h1 {color: rgb(180, 222, 89); }
     
     article { background-color: pink;
     aside { color: purple; }
     }
+
 }

@@ -1,0 +1,32 @@
+{
+    "Justin": {
+        "name":"Justin",
+        "role":"Coordinator",
+        "nickname":"i don't know",
+        "biopic":"justin.jpg"
+    },
+    "John": {
+        "name":"John",
+        "role":"super chill prof",
+        "nickname":"just john",
+        "biopic":"john.jpg"
+    },
+    "Joe": {
+        "name":"Joe",
+        "role":"Prof",
+        "nickname":"Teddy Bear",
+        "biopic":"joe.jpg"
+    },
+    "Jarrod": {
+        "name":"Jarrod",
+        "role":"Design Superstar",
+        "nickname":"Zoolander",
+        "biopic":"jarrod.jpg"
+    },
+    "Trevor": {
+        "name":"Trevor",
+        "role":"Dark Arts Prof",
+        "nickname":"T Dazzle",
+        "biopic":"trevor.jpg"
+    }
+  }
