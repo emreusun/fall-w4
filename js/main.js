@@ -1,11 +1,15 @@
 // imports go at the top of the JS file
-import { profs } from "./modules/data.js";
+import { getData } from "./modules/dataMiner.js";
 // this is an IIFE (Immediately Invoked Function Expression)
 // this is greate for encapsulating code / making it private
 // and is also a Javascript programming patter (the Module Pattern)
 
 (() => {
     console.log('fired');
+    // test the module
+
+
+  
     // get a reference to the template's contents and the target container
     // into which we'll clone a copy of the markup
     let theTemplate = document.querySelector("#user-template").content,
@@ -14,7 +18,7 @@ import { profs } from "./modules/data.js";
     // let theHeader = document.querySelector(".user-name"),
     //     theDesc = document.querySelector(".user-desc");
 
-    function changeCopy () {
+    function changeCopy(profs) {
         // parse the top-level props from the profs object (the prof names)
         let theProfs = Object.keys(profs);
 
@@ -26,7 +30,7 @@ import { profs } from "./modules/data.js";
         let panel = theTemplate.cloneNode(true),
             containers = panel.firstElementChild.children; // the sections tag's contents
         // put the prof data were it needs to go (just text for now)
-        containers[0].querySelector('img').src = `images/${profs[prof].avatar}`;
+        containers[0].querySelector('img').src = `images/${profs[prof].biopic}`;
        
 
         containers[1].textContent = profs[prof].name;
@@ -36,6 +40,6 @@ import { profs } from "./modules/data.js";
         theTeam.appendChild(panel);
     })
 }
-
-    changeCopy();
+    // retrieve our prof data, and then build out the content
+    getData(changeCopy);
 })();
