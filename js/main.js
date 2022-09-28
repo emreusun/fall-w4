@@ -39,7 +39,24 @@ import { getData } from "./modules/dataMiner.js";
         //paste the prof markup into the team section on the page
         theTeam.appendChild(panel);
     })
-}
+
+ }
+    function showJoke(data) {
+        // show the random chuck norris joke in the UI
+        debugger;
+        let theJoke = document.querySelector('.joke-text');
+
+        theJoke.textContent = data.value;
+        
+    }
+    function retrieveJoke() {
+        getData(`https://api.chucknorris.io/jokes/random`, showJoke);
+    }
+    let jokeButton = document.querySelector('#get-joke');
+
     // retrieve our prof data, and then build out the content
-    getData(changeCopy);
+    jokeButton.addEventListener('click', retrieveJoke);
+    
+    getData('./data.json', changeCopy);
+    // getData(`https://api.chucknorris.io/jokes/random`, showJoke)
 })();
