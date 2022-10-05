@@ -1,0 +1,17 @@
+.chuck-jokes {
+    h2 { font-size: 2em; font-weight: bolder; margin-bottom: 1em; }
+    h3 { font-size: 1.5em; font-style: italic; }
+
+    .query-controls {
+        padding-top: 2em;
+    }
+    button {
+        padding: 4px 12px;
+        margin: 0 0.25em;
+        font-size: 1.2em;
+        background-color: rbga(255,255,255,0.8);
+
+        cursor: pointer;
+
+    }
+}
